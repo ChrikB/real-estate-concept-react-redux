@@ -1,0 +1,34 @@
+/* scoped */
+
+section.extract-view  .copybtn {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    z-index: 4;
+}
+
+section.extract-view  #highlighting {
+    height: 500px;
+    max-width: 500px;
+    width: 100%;
+    overflow: scroll;
+    border: 1px solid #c9bfbf;
+    text-align: left;
+}
+
+section.extract-view  .highlighting-content{
+    min-height: 400px;
+    min-width: 280px;
+}
+
+section.extract-view  .highlighting-content.copied,
+section.extract-view  #highlighting.copied {
+    background-color: black;
+    color: wheat; 
+}
+
+@media (max-width: 576px) {
+  section.extract-view #highlighting {
+      max-width: 400px;
+  }
+}

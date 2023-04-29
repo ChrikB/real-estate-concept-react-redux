@@ -1,0 +1,108 @@
+
+  .buildingDetails-component{
+    max-width: 1200px;
+  }
+  .buildingDetails-component .carousel { 
+    max-width: 500px;
+    padding-bottom: 70px; 
+  }
+  .buildingDetails-component .carousel-indicators{
+    background: rgb(249, 249, 249);
+    width: 100%!important;
+    margin: auto!important;
+  }
+
+  .buildingDetails-component .bundle-row,
+  .buildingDetails-component .availability-row {
+    min-width: 300px;
+    min-height: 400px;
+  }
+  .buildingDetails-component .bundle-row .bundle {
+    width: 300px; 
+  }
+  .buildingDetails-component .row.availability-row .shadowred { 
+    text-shadow: 0px 4px 20px; 
+    -webkit-text-shadow: 0px 4px 20px; 
+    -moz-text-shadow: 0px 4px 20px; 
+    -ms-text-shadow: 0px 4px 20px; 
+	  -o-text-shadow: 0px 4px 20px; 
+  }
+  .buildingDetails-component .demo-disabled:after{
+    content: 'Disabled';
+    position: absolute;
+    color: rgba(255, 255, 255, 0);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .buildingDetails-component .demo-disabled:hover {
+    color: rgba(255,255,255,0)!important;
+    background-color: #dc3545!important;
+    border-color: rgba(255, 255, 255, 0)!important;
+    cursor: not-allowed;
+  }
+  .buildingDetails-component .demo-disabled:hover:after {
+    color: rgba(255, 255, 255, 1);
+  }
+  .buildingDetails-component  .dp__action_row {
+    /* datepicker fixing priginal bug for no-updating width when screen dimension changes. */
+    width: 100%!important;
+  }
+  .buildingDetails-component .carousel-item-img-bg {
+    background-size:cover; 
+    width: 100%;
+    max-width: 500px; 
+    height: 350px;
+  }
+  .buildingDetails-component .bundle {
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,0.14);
+    border-radius: 5px;
+  }
+  .buildingDetails-component .bi-check {
+    fill: green;
+  }
+  .buildingDetails-component .bi-x {
+    fill: red;
+  }
+  .buildingDetails-component .card-savingsMessage{ 
+    background: rgb(235, 255, 229); 
+  }
+  .buildingDetails-component .map-cont{
+    width: 450px;
+    height: 367px;
+  }
+  @media (max-width: 500px) {
+    .buildingDetails-component .map-cont{
+      width: 100%!important;
+    }
+    .buildingDetails-component .map-cont #map{
+      width: 100%;
+    }
+  }
+  @media (max-width: 1300px) {
+    .buildingDetails-component .datepicker-col,
+    .buildingDetails-component .map-col {
+      width: 100%!important;
+    }
+  }
+
+  @media (max-width: 540px) {
+    .react-datepicker__month-container{
+      float: none;
+    }
+  }
+  .dp__cell_highlight {
+    _background-color: rgb(105, 167, 131, 0.4);
+  }
+  .dp__range_end, 
+  .dp__range_start, 
+  .dp__active_date {
+    background-color: #abcee9!important;
+    color: #000000;
+  }
+
+  .buildingDetails-component #map{
+    width: 450px;
+    height: 367px!important;
+  }

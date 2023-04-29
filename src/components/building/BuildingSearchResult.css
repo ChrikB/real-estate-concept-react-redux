@@ -1,0 +1,57 @@
+  .buildingSearchResult-component:hover{
+    cursor: pointer;
+  }
+  .buildingSearchResult-component .building-thumb-main { 
+    _width: 200px; 
+    height: 200px; 
+    background-size: cover; 
+    background-position: center; 
+    cursor: pointer;
+    max-width: 250px;
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+  
+  .buildingSearchResult-component .building-price,
+  .buildingSearchResult-component .building-name,
+  .buildingSearchResult-component .building-size,
+  .buildingSearchResult-component .building-size-label,
+  .buildingSearchResult-component .building-region,
+  .buildingSearchResult-component .building-country,
+  .buildingSearchResult-component .building-floor,
+  .buildingSearchResult-component .building-floor-label {
+    text-transform: capitalize;
+  }
+  
+  .buildingSearchResult-component .building-price>* {
+    font-size: 17px;
+    font-weight: bold;
+  }
+  .buildingSearchResult-component .building-name,
+  .buildingSearchResult-component .building-size,
+  .buildingSearchResult-component .building-size-unit {
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+  }
+  .buildingNameSpan{
+    text-decoration: underline;
+    cursor:pointer
+  }  
+  .buildingNameSpan:hover{
+    color: blue;
+  }
+  @media (max-width: 575.98px) { 
+    .buildingSearchResult-component{
+      margin: auto;
+    }
+    .buildingSearchResult-component .building-thumb {
+      margin: auto;
+    }
+    .buildingSearchResult-component>.row>* {
+      text-align:center!important;
+    }
+    .buildingSearchResult-component>.row>div>.row {
+      justify-content: center;
+    }
+  }

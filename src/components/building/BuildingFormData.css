@@ -1,0 +1,96 @@
+
+
+  .buildingFormData-component .country-note {
+    animation: color-change 2s infinite;
+    font-size: 10px;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  
+  @keyframes color-change {
+    0% { color: #5a8d44; }
+    50% { color: blue; }
+    100% { color: #5a8d44; }
+  }
+  .buildingFormData-component label.buildingName {
+    font-size: 17px;
+    color: #144d62;
+  }
+  .buildingFormData-component input {
+    text-align: center;
+  }
+  .buildingFormData-component :deep(#building-availability-tab .dp__pointer.dp__input_readonly.dp__input.dp__input_icon_pad) {
+    border-width: 1px;
+    padding: 5px;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 30px;
+  }
+  .buildingFormData-component .bundle-sum {
+    border-radius: 20%;
+    width: 25px;
+    height: 25px;
+    color: white;
+    background-color: #5a8d44;
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+ 
+  .buildingFormData-component  .dashboard-building-thumb {
+    width: 200px;
+    height:  200px;
+    background-position: center;
+    background-size: cover;
+  }
+  .buildingFormData-component  img.dashboard-building-thumb {
+    width: 200px;
+    height: auto;
+  }
+  
+  .buildingFormData-component  .dashboard-building-thumb >.btn-close {
+    background-color: white;
+    border-radius: 50%;
+    color: black;
+    opacity: 0.8;
+  }   
+  
+  .buildingFormData-component   .has-invalids {
+    color: red!important;
+  }
+  .buildingFormData-component   .has-invalids:after {
+    content: '*';
+  }
+  .buildingFormData-component   .invalid-tooltip {
+    z-index: 90000;
+  }
+  .buildingFormData-component   .bundle-cont{ 
+    max-width: 350px; 
+    min-width: 280px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media (max-width: 640px) {
+    .buildingFormData-component   .nav-tabs .nav-link{
+      padding: 8px;
+      font-size: 14px;
+    }
+    .buildingFormData-component   .nav-tabs .nav-link.active{
+      width: 100%;
+      background-color: #f1f1f1!important;
+      acolor: white!important;
+    }
+    .buildingFormData-component .bundle-cont{
+      width: 100%;
+      _min-width: 300px;
+      border-bottom: 1px solid gray;
+      margin-bottom: 50px;
+    }
+  }
+  .buildingFormData-component #map{
+    width: 450px;
+    height: 367px!important;
+  }

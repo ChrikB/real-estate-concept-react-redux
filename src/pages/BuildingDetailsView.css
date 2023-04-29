@@ -1,0 +1,10 @@
+/* scoped */
+
+.BuildingDetails{
+  width: auto;
+}
+@media (max-width: 600.98px) {
+  .BuildingDetails{
+      width: 100%;
+    }
+  }

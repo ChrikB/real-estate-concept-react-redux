@@ -1,0 +1,11 @@
+/* scoped */
+
+section.user-add {
+  width: 50%;
+  max-width: 450px;
+}
+@media (max-width: 767.98px) {
+  section.user-add {
+    width: 90%;
+  }
+}

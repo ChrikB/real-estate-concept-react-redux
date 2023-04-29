@@ -1,0 +1,46 @@
+/* scoped */
+
+.userSearchResult-component {
+  box-shadow: 1px 4px 10px 10px #00000021;
+  border-radius: 10px;
+}
+
+.userSearchResult-component input,
+.userSearchResult-component span {
+  color: #016887;
+  text-align: center;
+  border:0;
+}
+
+.userSearchResult-component .user-buildings {
+  padding: 5px;
+  border-radius: 10px;
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.userSearchResult-component .user-role input,
+.userSearchResult-component .user-country input{
+  width: 60px;
+}
+
+.bi-x-lg{
+  fill: red;
+}
+
+.bi-pencil-square{
+  fill: green;
+}
+
+.bi-x-lg,
+.bi-pencil-square{
+  cursor:pointer;
+  z-index: 300;
+}
+
+.bi-x-lg,
+.bi-pencil-square:hover{ 
+
+  cursor:pointer;
+ }

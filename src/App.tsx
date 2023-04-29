@@ -1,57 +1,73 @@
-import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
+
 import './App.css';
 
+import AppNavs from './routes';
+
+import 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import {
+  /*BrowserRouter*/ HashRouter as Router,
+  Route,
+  Routes,
+  Link
+} from "react-router-dom";
+
+import AboutView from './pages/AboutView'
+import BuildingSearchView from './pages/BuildingSearchView'
+import BuildingInsertView from './pages/BuildingInsertView'
+import BuildingUpdateView from './pages/BuildingUpdateView'
+import BuildingDetailsView from './pages/BuildingDetailsView'
+
+import StatsView from './pages/StatsView'
+import ExtractView from './pages/ExtractView'
+import UserSearchView from './pages/UserSearchView'
+import UserInsertView from './pages/UserInsertView'
+
+import UserUpdateView from './pages/UserUpdateView'
+
+import { useAppSelector, useAppDispatch } from './app/hooks';
+import {useEffect} from 'react';
+import {
+  requestGetUsers
+} from './components/user/userSlice';
+
+import {Navigate} from 'react-router-dom';
+
+
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
-    </div>
+      <div className="container-fluid overflow-hidden">
+        <div className="row vh-100 overflow-auto">
+ 
+        <Router>       
+          <AppNavs />
+          <div className="col d-flex flex-column h-sm-100">
+
+              <h2 className="mt-5 mb-3">ADMIN DASHBOARD</h2>
+            
+              <Routes>
+                <Route path="*"                   element={<Navigate to="/buildings" replace />} />
+                <Route path="/about"              element={<AboutView/>}></Route>
+                <Route path="/users"              element={<UserSearchView/>}></Route>
+                <Route path="/buildings"          element={<BuildingSearchView/>}></Route>
+                <Route path="/buildings/:id"      element={<BuildingDetailsView/>}></Route>
+                <Route path="/building/add"       element={<BuildingInsertView/>}></Route>
+                <Route path="/building/:id"       element={<BuildingUpdateView/>}></Route>
+                <Route path="/stats"              element={<StatsView/>}></Route>
+                <Route path="/extract"            element={<ExtractView/>}></Route>
+                <Route path="/uadd"               element={<UserInsertView/>}></Route>
+                <Route path="/user/:id"           element={<UserUpdateView/>}></Route>
+              </Routes>
+            
+          </div>
+        </Router>  
+
+        </div>  
+      </div>   
+    </div>   
   );
 }
 

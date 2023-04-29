@@ -1,0 +1,20 @@
+#amap { height: 380px; width: 380px;}
+section.building-update {
+  _width: 50%;
+  _max-width: 450px;
+}
+@media (max-width: 1267.98px) {
+  section.building-update {
+    width: 100%;
+  }
+}
+@media (max-width: 767.98px) {
+  section.building-update {
+    width: 90%;
+  }
+}
+@media (max-width: 600.98px) {
+  section.building-update {
+    width: 100%;
+  }
+}

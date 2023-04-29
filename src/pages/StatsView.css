@@ -1,0 +1,40 @@
+/* scoped */
+
+/*
+section.stats-view-scoped  .chart-col{
+    position: relative; 
+    min-height: 350px; 
+    height: 20vh; 
+    max-height: 450px;
+}
+*/
+
+
+section.stats-view-scoped  .chart-cont{
+    position:relative;
+    width: 100%;
+    height: 85%;
+    min-height: 300px;
+    min-width: 300px;
+    max-height: 400px;
+    _max-width: 400px;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section.stats-view-scoped.stats-view {
+     /* width: 75%; */
+      width: 95%;
+}
+
+@media (max-width: 876px) {
+    section.stats-view-scoped.stats-view {
+     /*  width: 70%; */
+      width: 95%;
+    }
+}
+@media (max-width: 576px) {
+    section.stats-view-scoped.stats-view {
+      width: 100%;
+    }
+}

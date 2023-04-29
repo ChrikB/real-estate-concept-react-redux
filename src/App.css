@@ -1,39 +1,111 @@
-.App {
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.6;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+#app,.App {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html,body,#app,.App {
+  width:100%;
+  height: 100%; 
+  padding:0;
+  max-width: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
+
+  a,
+  link{
+    display:block;
   }
+  @media (min-width: 576px) {
+    .h-sm-100 {
+        aheight: 100%;
+    }
+  }
+  .container-fluid{
+    background:white;
+    color:black!important;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  #nav{
+    background:red;
+    left: 0;
+    top: 0;
+    color:white;
+  }
+  #nav ul{
+    list-style-type:none;
+    text-align:left;
+  }
+  #nav ul li{
+    background: rgba(255,255,255,0.9);
+    background: rgba(255,255,255,0);
+  }
+
+  .nav.nav-pills>li{
+    margin-bottom: 15px;
+    margin-right: 15px;
+    margin-left:15px;
+    font-size: 16px;
+  }
+  #nav ul li>a{
+    color: white;
+    text-decoration: none;
+  }
+
+
+
+  @media (max-width: 300px) {
+    #nav ul li {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
+
+  @media (max-width: 580px) {
+    #nav .nav.nav-pills {
+      flex-wrap: wrap!important;
+    }
+ }
+
+
+
+
+
+ul{
+  list-style-type: none;
 }
 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-}
 
-.App-link {
-  color: rgb(112, 76, 182);
-}
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
+
+
+
+

@@ -1,0 +1,22 @@
+/* scoped */
+
+  /* #map { height: 380px; width: 380px;} */
+  section.building-add {
+    _width: 50%;
+    _max-width: 450px;
+  }
+  @media (max-width: 1267.98px) {
+    section.building-add {
+      width: 100%;
+    }
+  }
+  @media (max-width: 767.98px) {
+    section.building-add {
+      width: 90%;
+    }
+  }
+  @media (max-width: 600.98px) {
+    section.building-add {
+      width: 100%;
+    }
+  }

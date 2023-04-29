@@ -1,0 +1,557 @@
+[
+	{
+		"username": "user_a",
+		"email": "user_a@gmail.com",
+		"password": "",
+		"phone": 982382382,
+		"country": "Italy",
+		"profileName": "",
+		"profileAvatar": "",
+		"role": 2,
+		"id": 1,
+		"buildings": [
+			{
+				"visits":3,
+				"username": "",
+				"buildingName": "Apartment",
+				"region": "",
+				"country": "Greece",
+				"countryMapObj": "",
+				"rating": 5,
+				"map": {
+					"lat": "39.074208",
+					"lng": "21.824312"
+				},
+				"size": 110,
+				"floor": 1,
+				"rooms": 3,
+				"pricePerDay": 40,
+				"availability": [
+					"2023-02-18T12:20:00.000Z",
+					"2023-02-19T12:20:00.000Z",
+					"2023-02-20T12:20:00.000Z",
+					"2023-02-21T12:20:00.000Z",
+					"2023-02-22T12:20:00.000Z",
+					"2023-02-23T12:20:00.000Z",
+					"2023-02-24T12:20:00.000Z",
+					"2023-02-25T12:20:00.000Z",
+					"2023-02-26T12:20:00.000Z"
+				],
+				"imgs": [
+					"imgs/aguimes-g09e389e65_640.jpg",
+					"imgs/architect-1080592_960_720.jpg"
+				],
+				"bundles": [
+					{
+						"name": "3 days fun",
+						"dinner": true,
+						"breakfast": true,
+						"lunch": true,
+						"selfCatering": true,
+						"wifi": true,
+						"bundlePrice": "90",
+						"days": 3,
+						"dates": [
+							"2023-02-21T12:20:00.000Z",
+							"2023-02-24T12:20:00.000Z"
+						]
+					},
+					{
+						"name": "4 days fun",
+						"dinner": true,
+						"breakfast": true,
+						"lunch": true,
+						"selfCatering": true,
+						"wifi": true,
+						"bundlePrice": "100",
+						"days": 4,
+						"dates": [
+							"2023-02-21T12:20:00.000Z",
+							"2023-02-24T12:20:00.000Z"
+						]
+					}
+				],
+				"id": 1676722937381,
+				"assignTo": 1
+			}
+		]
+	},
+	{
+		"username": "user_b",
+		"email": "b_user@hotmail.com",
+		"password": "",
+		"phone": 982982382382,
+		"country": "Germany",
+		"profileName": "",
+		"profileAvatar": "",
+		"role": 2,
+		"id": 2,
+		"buildings": [
+			{
+				"visits":13,
+				"username": "",
+				"buildingName": "Suite Large",
+				"region": "",
+				"country": "Iceland",
+				"countryMapObj": "",
+				"rating": 6,
+				"map": {
+					"lat": "64.963051",
+					"lng": "-19.020835"
+				},
+				"size": 223,
+				"floor": 2,
+				"rooms": 6,
+				"pricePerDay": 60,
+				"availability": "",
+				"imgs": [
+					"imgs/ameland-g7480aa798_640.jpg"
+				],
+				"bundles": [],
+				"id": 1676723121682,
+				"assignTo": 2
+			},
+			{
+				"visits":53,
+				"username": "",
+				"buildingName": "Beach View",
+				"region": "",
+				"country": "Cyprus",
+				"countryMapObj": "",
+				"rating": 6,
+				"map": {
+					"lat": 34.873714547364855,
+					"lng": 33.61567497253419
+				},
+				"size": 400,
+				"floor": 0,
+				"rooms": 8,
+				"pricePerDay": 300,
+				"availability": [],
+				"imgs": [
+					"imgs/coast-g0d5b7d822_640.jpg"
+				],
+				"bundles": [
+					{
+						"name": "Full Month",
+						"dinner": false,
+						"breakfast": false,
+						"lunch": false,
+						"selfCatering": false,
+						"wifi": false,
+						"bundlePrice": "6000",
+						"days": 30,
+						"dates": []
+					}
+				],
+				"id": 1676774634470,
+				"assignTo": 2
+			}
+		]
+	},
+	{
+		"username": "admin",
+		"email": "admin@gmail.com",
+		"password": "",
+		"phone": 95564907,
+		"country": "Denmark",
+		"profileName": "super_admin",
+		"profileAvatar": "",
+		"role": "1",
+		"id": 3,
+		"buildings": [
+			{
+				"username": "",
+				"buildingName": "Near Beach",
+				"region": "",
+				"country": "Malta",
+				"countryMapObj": "",
+				"rating": 4,
+				"map": {
+					"lat": "35.937496",
+					"lng": "14.375416"
+				},
+				"size": 262,
+				"floor": 0,
+				"rooms": 8,
+				"pricePerDay": 140,
+				"availability": "",
+				"imgs": [
+					"imgs/dining-room-g2f569b87b_640.jpg"
+				],
+				"bundles": [],
+				"id": 1676727112739,
+				"assignTo": 3
+			},
+			{
+				"username": "",
+				"buildingName": "Luxury Apartment",
+				"region": "",
+				"country": "Finland",
+				"countryMapObj": "",
+				"rating": 2,
+				"map": {
+					"lat": 60.193852012013835,
+					"lng": 25.038871765136722
+				},
+				"size": 90,
+				"floor": 1,
+				"rooms": 4,
+				"pricePerDay": 60,
+				"availability": [],
+				"imgs": [
+					"imgs/fantasy-gd83db634c_640.jpg"
+				],
+				"bundles": [
+					{
+						"name": "Week Gift ",
+						"dinner": true,
+						"breakfast": true,
+						"lunch": true,
+						"selfCatering": true,
+						"wifi": true,
+						"bundlePrice": "250",
+						"days": 6,
+						"dates": [
+							"2023-02-19T02:38:00.000Z",
+							"2023-02-25T02:38:00.000Z"
+						]
+					}
+				],
+				"id": 1676774405407,
+				"assignTo": 3
+			}
+		]
+	},
+	{
+		"username": "i_am_a_user",
+		"email": "i_am_a_user@gmail.com",
+		"password": "",
+		"phone": 33223412,
+		"country": "Cyprus",
+		"profileName": "",
+		"profileAvatar": "",
+		"role": "2",
+		"id": 4,
+		"buildings": [
+			{
+				"username": "",
+				"buildingName": "Renewed Room",
+				"region": "",
+				"country": "Germany",
+				"countryMapObj": "",
+				"rating": 6,
+				"map": {
+					"lat": "51.165691",
+					"lng": "10.451526"
+				},
+				"size": 89,
+				"floor": 1,
+				"rooms": 3,
+				"pricePerDay": 54,
+				"availability": [],
+				"imgs": [
+					"imgs/home-gd3cc96f95_640.jpg"
+				],
+				"bundles": [],
+				"id": 1676726906243,
+				"assignTo": 4
+			}
+		]
+	},
+	{
+		"username": "i_am_a_user_a",
+		"email": "buildingowner@gmail.com",
+		"password": "",
+		"phone": 33223412,
+		"country": "France",
+		"profileName": "",
+		"profileAvatar": "",
+		"role": "2",
+		"id": 5,
+		"buildings": [
+			{
+				"username": "",
+				"buildingName": "Marseille Palace",
+				"region": "",
+				"country": "France",
+				"countryMapObj": "",
+				"rating": 3,
+				"map": {
+					"lat": "46.227638",
+					"lng": "2.213749"
+				},
+				"size": 120,
+				"floor": 3,
+				"rooms": 4,
+				"pricePerDay": 55,
+				"availability": [],
+				"imgs": [
+					"imgs/hd-wallpaper-gd451f3214_640.jpg"
+				],
+				"bundles": [
+					{
+						"name": "7 days discount",
+						"dinner": true,
+						"breakfast": true,
+						"lunch": true,
+						"selfCatering": true,
+						"wifi": true,
+						"bundlePrice": "280",
+						"days": 7,
+						"dates": []
+					}
+				],
+				"id": 1676726078199,
+				"assignTo": 5
+			}
+		]
+	},
+	{
+		"username": "admin_gr",
+		"email": "admin_gr@gmail.com",
+		"password": "",
+		"phone": 23242645,
+		"country": "Cyprus",
+		"profileName": "someone",
+		"profileAvatar": "",
+		"role": "1",
+		"id": 6,
+		"buildings": [
+			{
+				"username": "",
+				"buildingName": "Apartment 50 Ft",
+				"region": "",
+				"country": "Spain",
+				"countryMapObj": "",
+				"rating": 1,
+				"map": {
+					"lat": "40.463667",
+					"lng": "-3.749220"
+				},
+				"size": 70,
+				"floor": 1,
+				"rooms": 2,
+				"pricePerDay": 36,
+				"availability": [
+					"2023-04-18T12:23:00.000Z",
+					"2023-04-19T12:23:00.000Z",
+					"2023-04-20T12:23:00.000Z",
+					"2023-04-21T12:23:00.000Z",
+					"2023-04-22T12:23:00.000Z",
+					"2023-04-23T12:23:00.000Z",
+					"2023-04-30T12:23:00.000Z",
+					"2023-04-29T12:23:00.000Z",
+					"2023-04-28T12:23:00.000Z",
+					"2023-04-27T12:23:00.000Z",
+					"2023-04-26T12:23:00.000Z",
+					"2023-04-25T12:23:00.000Z",
+					"2023-04-24T12:23:00.000Z"
+				],
+				"imgs": [
+					"imgs/kitchen-gdec289e57_640.jpg",
+					"imgs/living-room-ge106c1a4d_640.jpg"
+				],
+				"bundles": [
+					{
+						"name": "Full Week package",
+						"dinner": true,
+						"breakfast": true,
+						"lunch": true,
+						"selfCatering": true,
+						"wifi": true,
+						"bundlePrice": "200",
+						"days": 7,
+						"dates": []
+					}
+				],
+				"id": 1676726687307,
+				"assignTo": 6
+			}
+		]
+	},
+	{
+		"username": "chris",
+		"email": "chris@gmail.com",
+		"password": "",
+		"phone": 886656543,
+		"country": "Greece",
+		"profileName": "chris",
+		"profileAvatar": "",
+		"role": 2,
+		"id": 7,
+		"buildings": [
+			{
+				"username": "",
+				"buildingName": "Limassol Tourism",
+				"region": "",
+				"country": "Cyprus",
+				"countryMapObj": "",
+				"rating": 4,
+				"map": {
+					"lat": 34.67066447418491,
+					"lng": 32.99220085144044
+				},
+				"size": 80,
+				"floor": 0,
+				"rooms": 1,
+				"pricePerDay": 28,
+				"availability": [],
+				"imgs": [
+					"imgs/house-g84f55af92_640.jpg"
+				],
+				"bundles": [],
+				"id": 1676726292139,
+				"assignTo": 7
+			}
+		]
+	},
+	{
+		"username": "jenny1",
+		"email": "jenny@hotmail.com",
+		"password": "",
+		"phone": 564524243,
+		"country": "Australia",
+		"profileName": "jenny",
+		"profileAvatar": "",
+		"role": 2,
+		"id": 8,
+		"buildings": [
+			{
+				"username": "",
+				"buildingName": "Hotel Room",
+				"region": "",
+				"country": "Germany",
+				"countryMapObj": "",
+				"rating": 3,
+				"map": {
+					"lat": "51.165691",
+					"lng": "10.451526"
+				},
+				"size": 35,
+				"floor": 10,
+				"rooms": 4,
+				"pricePerDay": 25,
+				"availability": [
+					"2023-02-18T12:27:00.000Z",
+					"2023-02-19T12:27:00.000Z",
+					"2023-02-26T12:27:00.000Z",
+					"2023-02-23T12:27:00.000Z",
+					"2023-02-24T12:27:00.000Z",
+					"2023-02-25T12:27:00.000Z",
+					"2023-02-22T12:27:00.000Z",
+					"2023-02-28T12:27:00.000Z",
+					"2023-02-27T12:27:00.000Z"
+				],
+				"imgs": [
+					"imgs/stone-house-g7f8a6b571_640.jpg"
+				],
+				"bundles": [
+					{
+						"name": "2 days relaxing",
+						"dinner": true,
+						"breakfast": true,
+						"lunch": true,
+						"selfCatering": true,
+						"wifi": false,
+						"bundlePrice": "30",
+						"days": 2,
+						"dates": [
+							"2023-02-24T12:27:00.000Z",
+							"2023-02-26T12:27:00.000Z"
+						]
+					}
+				],
+				"id": 1676723306581,
+				"assignTo": 8
+			}
+		]
+	},
+	{
+		"username": "marissa_a",
+		"email": "marissa@gmail.com",
+		"password": "",
+		"phone": 6343452,
+		"country": "Argentina",
+		"profileName": "marissa",
+		"profileAvatar": "",
+		"role": 2,
+		"id": 9,
+		"buildings": [
+			{
+				"username": "",
+				"buildingName": "Queen Palace",
+				"region": "",
+				"country": "United Kingdom",
+				"countryMapObj": "",
+				"rating": 3,
+				"map": {
+					"lat": 51.489293207077296,
+					"lng": -0.5033111572265626
+				},
+				"size": 300,
+				"floor": 0,
+				"rooms": 3,
+				"pricePerDay": 100,
+				"availability": [
+					"2023-03-23T12:31:00.000Z",
+					"2023-03-31T11:31:00.000Z"
+				],
+				"imgs": [
+					"imgs/house-gec04e87fb_640.jpg"
+				],
+				"bundles": [
+					{
+						"name": "Event Time",
+						"dinner": false,
+						"breakfast": false,
+						"lunch": false,
+						"selfCatering": false,
+						"wifi": false,
+						"bundlePrice": "600",
+						"days": 7,
+						"dates": []
+					}
+				],
+				"id": 1676723528444,
+				"assignTo": 9
+			}
+		]
+	},
+	{
+		"username": "user_maria",
+		"email": "maria@gmail.com",
+		"password": "",
+		"phone": 564572,
+		"country": "Argentina",
+		"profileName": "maria",
+		"profileAvatar": "",
+		"role": 2,
+		"id": 10,
+		"buildings": [
+			{
+				"username": "",
+				"buildingName": "Traditional Tower",
+				"region": "",
+				"country": "Romania",
+				"countryMapObj": "",
+				"rating": 5,
+				"map": {
+					"lat": 45.348888017792156,
+					"lng": 25.555229187011722
+				},
+				"size": 300,
+				"floor": 0,
+				"rooms": 20,
+				"pricePerDay": 250,
+				"availability": [],
+				"imgs": [
+					"imgs/lighthouse-g43208b366_640.jpg"
+				],
+				"bundles": [],
+				"id": 1676725781552,
+				"assignTo": 10
+			}
+		]
+	}
+]

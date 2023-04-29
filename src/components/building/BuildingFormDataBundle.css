@@ -1,0 +1,28 @@
+  .buildingFormDataBundle-component .invalid-tooltip{
+    z-index: 90000;
+  }
+  .buildingFormDataBundle-component .form-check label{
+    cursor: pointer;
+  }
+  .buildingFormData-component .input-group-text{
+    font-size: 14px;
+  }
+  .buildingFormDataBundle-component :deep(.dp__pointer.dp__input_readonly.dp__input.dp__input_icon_pad) {
+    border-width:0;
+    padding-right: 0;
+  }
+  /* a style for bunlde template which acts like form */
+  .buildingFormDataBundle-component.emptybundle{
+    background:rgb(2,0,36);
+    background: linear-gradient(180deg, rgb(245 244 255) 0%, rgba(191,191,255,1) 35%, rgba(255,255,255,1) 100%);
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+  }
+
+  .buildingFormDataBundle-component .react-datepicker-wrapper {
+    position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+    min-width: 0;
+  }

@@ -1,0 +1,6 @@
+/* scoped */
+
+.userFormData-component input,
+.userFormData-component select {
+  text-align: center;
+}
