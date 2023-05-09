@@ -1,5 +1,5 @@
 
-import { useSearchParams,useParams  } from "react-router-dom";
+import { useSearchParams } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 
 import { User }  from './types'

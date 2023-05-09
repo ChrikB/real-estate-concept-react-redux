@@ -148,12 +148,3 @@ function BuildingDetailsView(){
 }
 
 export default BuildingDetailsView
-
-
-
-
-
-
-
-
-

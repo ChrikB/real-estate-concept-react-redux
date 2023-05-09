@@ -7,16 +7,14 @@ import { useSearchParams, useParams, createSearchParams,useNavigate  } from "rea
 import BuildingSearchCriteria from './../components/building/BuildingSearchCriteria' 
 import BuildingSearchResults from './../components/building/BuildingSearchResults' 
 
-import {BuildingState, BuildingInvalidForms, Building, BuildingCriteria } from './../components/building/types'
+import { Building, BuildingCriteria } from './../components/building/types'
 
 import {
-  removeBuilding, 
   requestGetBuildings
 } from './../components/building/buildingSlice';
 
 import {
-  removeUser,requestGetUsers,
-  getUsers
+  requestGetUsers
 } from './../components/user/userSlice';
 
 

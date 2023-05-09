@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react';
 
-import { useAppSelector, useAppDispatch } from './../../app/hooks';
+import { useAppSelector } from './../../app/hooks';
 
 
-import { RootState, AppThunk } from './../../app/store';
+import { RootState } from './../../app/store';
 
 
 import xcountriesx from './../../countries.json'
-import {UserState, UserInvalidForms, User, Country, Criteria } from './types'
+import { Country } from './types'
 
 
 function UserSearchCriteria(props: {getCriteria: Function} ){

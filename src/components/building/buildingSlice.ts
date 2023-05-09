@@ -1,4 +1,4 @@
-import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { /* createAsyncThunk, */ createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { RootState, AppThunk } from '../../app/store';
 
 
@@ -80,11 +80,11 @@ function validateBuildingData(formData: any, invalids: any){
   }
   if( formData.bundles){
     for(let m =0; m < formData.bundles.length; m++){
-      if(!formData.bundles[m].bundlePrice || formData.bundles[m].bundlePrice==0){
+      if(!formData.bundles[m].bundlePrice || formData.bundles[m].bundlePrice===0){
         invalids.bundles = { key: m, text:'Price is required'}; 
         return invalids;
       }
-      if(!formData.bundles[m].days || formData.bundles[m].days==0){
+      if(!formData.bundles[m].days || formData.bundles[m].days===0){
         invalids.bundles = { key: m, daystext:'"Days" field cant be null or zero '}; 
         return invalids;
       }
@@ -111,7 +111,7 @@ export const requestGetBuildings =
   
   const currentState: any = getState();
 
-  if (!currentState.user.users || currentState.user.users.length === 0 && currentState.user.loadingUsers === false){  
+  if (   (!currentState.user.users || currentState.user.users.length === 0) && currentState.user.loadingUsers === false ){  
 
     dispatch(setLoadingUsers(true));
 
@@ -473,7 +473,7 @@ export const buildingSlice = createSlice({
                     tomorrow.setDate(today.getDate() + 1);
                     
                     if( criteria.availableTomorrow === building.availability 
-                      || (Array.isArray(building.availability) && building.availability.length==0)  
+                      || (Array.isArray(building.availability) && building.availability.length === 0)  
                       || (Array.isArray(building.availability) && building.availability.includes(tomorrow))   
                     ) {                                                                                         
                 //      getIt = true;

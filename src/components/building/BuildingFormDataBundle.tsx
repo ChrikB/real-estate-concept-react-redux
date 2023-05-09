@@ -1,9 +1,7 @@
 
 import { useState, useEffect } from 'react';
-import { useAppSelector, useAppDispatch } from './../../app/hooks';
-import { RootState, AppThunk } from './../../app/store';
 
-import {BuildingState, BuildingInvalidForms, Building, Bundle } from './types'
+import { Bundle } from './types'
 
 import DatePicker  from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
@@ -49,7 +47,7 @@ function BuildingFormDataBundle(
 
 
     const hasInvalidBundle = ()=> {
-        return  props.invalids && props.invalids.bundles && props.invalids.bundles.key==props.index ? true:false;
+        return  props.invalids && props.invalids.bundles && props.invalids.bundles.key===props.index ? true:false;
     }
 
 
@@ -66,10 +64,10 @@ function BuildingFormDataBundle(
         const [start, end] = dates;
         let newDates:any = [];
         if (start) { 
-            newDates[0] = start;
+            newDates[0] = start.toJSON();
         }
         if (end) { 
-            newDates[1] = end;
+            newDates[1] = end.toJSON();
         }
         updateBundle({target: { value: newDates }}, "dates");
 
@@ -162,6 +160,7 @@ function BuildingFormDataBundle(
                 <span className="input-group-text" id="basic-addon1">Dates</span>
 
                 <DatePicker  
+                  
                     className="form-control text-center" 
                     onChange={onChangeBundleRange}
                     shouldCloseOnSelect={false}
@@ -205,17 +204,15 @@ function BuildingFormDataBundle(
             </div>                         
         </div>
 
-       { (props.addbtn==true) && 
+       { (props.addbtn===true) && 
         <button 
-           role="button" 
            className="btn btn-sm btn-primary m-1"  
            type="button"    
            onClick={(evt) => props.addBundle(bundle)}
         >Add</button>
        }
-       { (props.removable==true) && 
+       { (props.removable===true) && 
         <button 
-           role="button" 
            className="btn btn-sm btn-danger m-1"   
            type="button"    
            onClick={(evt) => props.deleteBundle(bundle, props.index)}

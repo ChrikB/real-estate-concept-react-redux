@@ -2,7 +2,7 @@
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
-import { useRef, createRef, RefObject } from "react";
+import { useRef } from "react";
 import { useState, useEffect } from 'react';
 
 import  BuildingFormData from './BuildingFormData'
@@ -38,14 +38,16 @@ function BuildingFormInsert(){
 
   const lastentry = useRef<HTMLDivElement>(null!);  
 
+/*
   const modalbtn = useRef<HTMLButtonElement>(null!);
 
   const modalBody = useRef<HTMLDivElement>(null!);  
 
-
+  const currentBuildings = useAppSelector(store => store.building.buildings);
+*/
   const currentUsers = useAppSelector(store => store.user.users);
   
-  const currentBuildings = useAppSelector(store => store.building.buildings);
+
   
 
 
@@ -117,7 +119,7 @@ function BuildingFormInsert(){
         />   
 
         <div className="m-auto w-25 pt-2 pb-4" style={ { minWidth: "200px" } }>
-          <label className="form-label fw-bold">Assing Building To{ (currentUsers.length>0)? 1 : 0 }</label>
+          <label className="form-label fw-bold">Assing Building To</label>
           <select  
             className="form-select  text-center"  
             onChange={(e)=> setAssignTo(parseInt(e.target.value,10)) }

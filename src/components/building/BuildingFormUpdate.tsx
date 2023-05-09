@@ -2,11 +2,11 @@
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
-import { useRef, createRef } from "react";
-import { useState, useEffect } from 'react';
+import { useRef } from "react";
+import { useState } from 'react';
 import { useNavigate  } from "react-router-dom";
 
-import { useSearchParams, useParams, createSearchParams  } from "react-router-dom";
+import { useSearchParams } from "react-router-dom";
 
 import  BuildingFormData from './BuildingFormData'
 
@@ -44,14 +44,16 @@ function BuildingFormUpdate( props: { buildingDataProp: Building } ){
 
   const [assignTo, setAssignTo] = useState<number|null>(null);
 
-  const lastEntryEmail: {[current:string]:any} = useRef(null);
+
 
   const lastentry = useRef<HTMLDivElement>(null!);       
+/*
+  const lastEntryEmail: {[current:string]:any} = useRef(null);
 
   const modalbtn = useRef<HTMLButtonElement>(null!);
 
   const modalBody = useRef<HTMLDivElement>(null!); 
-
+*/
   const currentUsers = useAppSelector(store => store.user.users);
 
 

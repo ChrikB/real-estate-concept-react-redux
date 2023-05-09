@@ -1,18 +1,18 @@
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
-import Button from 'react-bootstrap/Tabs';
 
 import DatePicker  from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
 
 import { MapContainer, TileLayer, useMap, useMapEvent,  Popup, Marker } from 'react-leaflet'
 
-import { useRef, createRef, RefObject } from "react";
+import { useRef } from "react";
+//import {  createRef, RefObject } from "react";
 import { useState, useEffect } from 'react';
-import { useAppSelector, useAppDispatch } from './../../app/hooks';
-import { RootState, AppThunk } from './../../app/store';
+import { useAppSelector /* , useAppDispatch */ } from './../../app/hooks';
+import { RootState } from './../../app/store';
 
-import {BuildingState, BuildingInvalidForms, Building, Country, Bundle } from './types'
+import { BuildingInvalidForms, Building, Country, Bundle } from './types'
 
 import BuildingFormDataBundle from './BuildingFormDataBundle'
 
@@ -83,7 +83,7 @@ function BuildingFormData(props: {formDataChanged: Function, formDataProp?: Buil
 
     require('./BuildingFormData.css');
 
-    const dispatch: Function = useAppDispatch();
+   // const dispatch: Function = useAppDispatch();
 
     const gallery = useRef<HTMLDivElement>(null!); 
 
@@ -94,7 +94,7 @@ function BuildingFormData(props: {formDataChanged: Function, formDataProp?: Buil
             username: "",
             buildingName: "",
             region: "",
-            country: "CANADA",
+            country: "United Kingdom",
             countryMapObj:"",
             mapLat: null,
             map: {
@@ -123,7 +123,7 @@ function BuildingFormData(props: {formDataChanged: Function, formDataProp?: Buil
 
     const [startAvailabilityDate, setStartAvailabilityDate] = useState(null);
 
-    const [endAvailabilityDate, setEndAvailabilityDate] = useState(null);
+    //const [endAvailabilityDate, setEndAvailabilityDate] = useState(null);
 
     const [bundlez, setBundle] = useState<any>({
 
@@ -285,11 +285,13 @@ function BuildingFormData(props: {formDataChanged: Function, formDataProp?: Buil
       }
       return publicPath + x;
       /* otherwise its a string path */
+      /*
       if ( process.env.NODE_ENV === 'development' ) {  
         return new URL('./../../' + x, import.meta.url).href
       }else{
         return new URL( publicPath + x, import.meta.url).href;
       }
+      */
     };
 
 
@@ -734,7 +736,7 @@ function BuildingFormData(props: {formDataChanged: Function, formDataProp?: Buil
             }
             tabClassName={hasInvalidsBundles()?'has-invalids':''}
           >
-            <h1 className="mt-5"></h1>
+            <div className="mt-5"></div>
             <div className="row">
               <div className="col">
                 <div className="fw-bold">Fill bundle form</div>
@@ -799,4 +801,3 @@ function BuildingFormData(props: {formDataChanged: Function, formDataProp?: Buil
 }
 
 export default BuildingFormData;
-

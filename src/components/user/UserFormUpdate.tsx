@@ -2,14 +2,14 @@
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
-import { useRef, createRef } from "react";
-import { useState, useEffect } from 'react';
+//import { useRef } from "react";
+import { useState } from 'react';
 
 import  UserFormData from './../../components/user/UserFormData'
 
-import { useAppSelector, useAppDispatch } from '../../app/hooks';
+import {  useAppDispatch } from '../../app/hooks';
 
-import {UserState, UserInvalidForms, User } from './types'
+import { User } from './types'
 import { 
   requestUpdateUser
 } from './userSlice';
@@ -25,11 +25,11 @@ function UserFormUpdate(props: {userDataProp: User} ){
 
   /*-- const [formData, setFormData] = useState({id:null}); */     
   const [formData, setFormData] = useState<User>(props.userDataProp);
-
+/*
   const modalbtn = useRef(null);
 
   const modalBody = useRef(null);
-
+*/
   const [show, setShow] = useState(false);/* modal */
 
   const [modalMessage, setModalMessage] = useState('');/* modal */

@@ -85,7 +85,7 @@ export const requestGetUsers =
 
   const currentState: any = getState();   
 
-  if ( !currentState.user.users || currentState.user.users.length === 0 && currentState.user.loadingUsers === false){  
+  if (  (!currentState.user.users || currentState.user.users.length === 0) && currentState.user.loadingUsers === false){  
     
     dispatch(setLoadingUsers(true));
 
@@ -110,7 +110,7 @@ export const requestGetUsers =
        dispatch(setLoadingUsers(false));
     });
 
-  } else { //alert(currentState.user.users.length);
+  } else { 
     dispatch(getUsers(dd));
    // dispatch(getUsers(d));
   }
@@ -238,17 +238,17 @@ export const userSlice = createSlice({
       state.users.push(newUser);  
     },
     
-    updateUser: (state, action) => { // alert('UPDATE USER ' + JSON.stringify(action.payload.formData));
-      //---- state.value -= 1;
-      const id  = action.payload.id; // alert('id' + id);
+    updateUser: (state, action) => { 
+
+      const id  = action.payload.id; 
       let formData = action.payload.formData;
       let userObj:any = state.users.find(  (user:any) => user.id === id);
       for (let i in formData) {
-        if (userObj && i!='buildings'){
+        if (userObj && i!=='buildings'){
            userObj[i] = formData[i];
         }
       }
-      console.log("SUpposed to be update", JSON.stringify(userObj));
+      
     },
 
     
@@ -282,7 +282,7 @@ export const userSlice = createSlice({
         } else {
            
                         /* userid */
-                        if(criteria.id && criteria.id >= 0 ){   console.log('criteria.id', criteria, criteria.id) 
+                        if(criteria.id && criteria.id >= 0 ){  
 
                           if(user.id === criteria.id){
                           //  getIt = true;
@@ -316,7 +316,7 @@ export const userSlice = createSlice({
         }
 
       }
-   //   console.log('reducer USERS', users, "criteria", Object.keys(criteria).length, criteria.hasOwnProperty('id'), users.length );
+
       state.queryUsers = users; 
 
       if (Object.keys(criteria).length ===1 && criteria.hasOwnProperty('id') && users.length>0){

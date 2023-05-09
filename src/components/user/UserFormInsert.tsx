@@ -2,14 +2,16 @@
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
-import { useRef, createRef, RefObject } from "react";
-import { useState, useEffect } from 'react';
+import { useRef } from "react";
+import { useState } from 'react';
 
 import  UserFormData from './../../components/user/UserFormData'
 
-import { useAppSelector, useAppDispatch } from '../../app/hooks';
+//import { useAppSelector, useAppDispatch } from '../../app/hooks';
+import {  useAppDispatch } from '../../app/hooks';
 
-import { UserInvalidForms, User }  from './types'
+
+import {  User }  from './types'
 import { 
   requestCreateUser
 } from './userSlice';
@@ -37,12 +39,13 @@ function UserFormInsert(){
 
   const lastentry = useRef<HTMLDivElement>(null!);       
 
+/*
   const modalbtn = useRef<HTMLButtonElement>(null!);
 
   const modalBody = useRef<HTMLDivElement>(null!);  
 
   const currentUsers = useAppSelector(store => store.user.users);
-
+*/
 
 
   const onFormDataUpdated = (formData: User ) => {

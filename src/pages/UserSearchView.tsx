@@ -6,8 +6,8 @@ import {useEffect} from 'react';
 import { useAppSelector, useAppDispatch } from './../app/hooks';
 
 import {
-  removeUser,requestGetUsers,
-  getUsers
+  removeUser,
+  requestGetUsers
 } from './../components/user/userSlice';
 
 

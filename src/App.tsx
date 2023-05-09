@@ -9,8 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {
   /*BrowserRouter*/ HashRouter as Router,
   Route,
-  Routes,
-  Link
+  Routes
 } from "react-router-dom";
 
 import AboutView from './pages/AboutView'
@@ -26,11 +25,6 @@ import UserInsertView from './pages/UserInsertView'
 
 import UserUpdateView from './pages/UserUpdateView'
 
-import { useAppSelector, useAppDispatch } from './app/hooks';
-import {useEffect} from 'react';
-import {
-  requestGetUsers
-} from './components/user/userSlice';
 
 import {Navigate} from 'react-router-dom';
 
@@ -41,7 +35,7 @@ function App() {
     <div className="App">
       <div className="container-fluid overflow-hidden">
         <div className="row vh-100 overflow-auto">
- 
+
         <Router>       
           <AppNavs />
           <div className="col d-flex flex-column h-sm-100">

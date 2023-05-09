@@ -1,18 +1,11 @@
 
-import { useSearchParams, useParams, createSearchParams,useNavigate  } from "react-router-dom";
 
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
-
-import { useRef, createRef, RefObject } from "react";
 import { useState, useEffect } from 'react';
 
-import { useAppSelector, useAppDispatch } from '../../app/hooks';
+import { useAppDispatch } from '../../app/hooks';
 
 import { BuildingCriteria }  from './types'
-import { 
-  requestCreateBuilding
-} from './buildingSlice';
+
 
 
 export default function BuildingSearchCriteria( props: { getCriteria: Function , criteriaProp: BuildingCriteria }) {

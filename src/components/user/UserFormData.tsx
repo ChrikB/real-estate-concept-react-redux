@@ -1,9 +1,9 @@
 
 import { useState, useEffect } from 'react';
-import { useAppSelector, useAppDispatch } from './../../app/hooks';
-import { RootState, AppThunk } from './../../app/store';
+import { useAppSelector } from './../../app/hooks';
+import { RootState } from './../../app/store';
 
-import {UserState, UserInvalidForms, User } from './types'
+import { UserInvalidForms, User } from './types'
 
 
 function UserFormData(props: {invalids: UserInvalidForms, formDataChanged: Function, formDataProp?: User}){
